@@ -1,0 +1,36 @@
+@tailwind base;
+@layer base {
+    .rich-editor {
+        @apply overflow-hidden;
+    }
+    .rich-editor ul {
+        @apply list-inside list-disc;
+    }
+    .rich-editor ol {
+        @apply list-inside list-decimal;
+    }
+    .rich-editor a {
+        @apply underline;
+    }
+    .rich-editor figcaption {
+        @apply hidden;
+    }
+    .rich-editor img {
+        @apply w-full md:w-2/5;
+    }
+    .rich-editor h2 {
+        @apply text-left mb-0 mt-12 text-xl font-bold tracking-normal uppercase;
+    }
+    .rich-editor h3 {
+        @apply text-left mb-0 mt-6 text-lg font-bold tracking-normal;
+    }
+}
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overscroll-behavior: none;
+}
+body {
+    overscroll-behavior: none;
+}
