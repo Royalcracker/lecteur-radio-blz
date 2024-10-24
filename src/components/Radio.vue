@@ -5,7 +5,7 @@
 
 
   async function getRadioData() {
-    const response = await fetch("http://cast.blzradio.fr:8443/status-json.xsl")
+    const response = await fetch("https://cast.blzradio.fr:8443/status-json.xsl")
     // const response = await fetch("https://blzradio.fr:8443/status-json.xsl")
     const json = await response.json();
     urlRadio.value = json.icestats.source.listenurl
