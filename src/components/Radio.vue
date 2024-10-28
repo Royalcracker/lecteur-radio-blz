@@ -8,7 +8,8 @@
     const response = await fetch("https://cast.blzradio.fr/status-json.xsl")
     // const response = await fetch("https://blzradio.fr:8443/status-json.xsl")
     const json = await response.json();
-    urlRadio.value = json.icestats.source.listenurl
+    urlRadio.value = "https://cast.blzradio.fr/radio1"
+    // urlRadio.value = json.icestats.source.listenurl
     titleRadio.value = json.icestats.source.title
   }
 
